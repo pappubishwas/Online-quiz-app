@@ -1,0 +1,195 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Roboto', sans-serif;
+    background-color: #464646;
+    background-size: cover;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    min-height: 100vh;
+
+}
+.container{
+    width: 940px;
+    background-color:rgb(101, 187, 187);
+    box-shadow: 0 0 50px 0 rgba(0,0,0, 0.2);
+    min-height: 350px;
+    padding:80px 90px;
+    border-radius: 25px;
+    display:flex;
+}
+.leftside,
+.rightside{
+    width:50%;
+    
+}
+.leftside img{
+    height:300px;
+    width:350px;
+}
+.rightside h1{
+    color: rgb(13, 92, 66);
+    font-size:32px;
+}
+.rightside h2{
+    color:rgb(26, 61, 61);
+    margin:20px auto 10px;
+    font-size: 25px;
+
+}
+.rightside ul{
+    color:rgb(223, 70, 15);
+    font-size:20px;
+    margin-top: 5px;
+    font-weight: 600;
+    list-style-type:circle;
+    list-style-position: inside;
+}
+.rightside ul li{
+    margin-top: 5px;
+}
+.rightside a{
+    background-color: rgb(24, 44, 37);
+    border-radius: 50px;
+    color: white;
+    font-weight: 600;
+    width: 100%;
+    display:inline-block;
+    text-align: center;
+    padding: 15px 0;
+    margin-top: 25px;
+    text-decoration: none;
+    outline:none;
+    
+}
+/*question page css start*/
+
+.box{
+    background-color: rgb(232, 208, 208);
+    border-radius: 20px;
+    box-shadow: 0 0 50px 0 rgba(0,0,0, 0.2);
+    min-height: 350px;
+    width: 600px;  
+    padding:50px;  
+}
+.title{
+    border-bottom: 2px solid #464646;
+    color:red;
+    padding-bottom: 10px;
+    margin-bottom: 30px;
+    font-weight:600;
+    font-size:24px;
+}
+.header{
+    margin-bottom:30px;
+    display:flex;
+    justify-content: space-between;
+}
+.scorebox,
+.timerbox{
+    border-radius: 100px;
+    color: rgb(8, 1, 1);
+    border: 1px solid #444;
+    padding:10px 15px;
+    background-color:rgb(209, 127, 20);
+}
+
+.questionbox{
+    background-color:rgb(9, 42, 31);
+    color: rgb(247, 115, 68);
+    border-radius: 10px;
+    padding:10px 15px;
+
+}
+.optionbox{
+    display:grid;
+    grid-template-columns:1fr 1fr;
+    margin: 30px 0;
+    grid-gap:15px;
+}
+.optionbox span.right{
+    background-color: green;
+    color: rgb(241, 198, 231);
+}
+.optionbox span.wrong{
+    background-color:red;
+    color: rgb(13, 12, 112);
+}
+.optionbox span{
+    background-color:rgb(119, 180, 180);
+    border-radius: 10px;
+    color:rgb(0, 0, 0);
+    border:1px solid orange;
+    padding:10px 15px;
+}
+.footer{
+    display: flex;
+    justify-content:space-between;
+
+}
+.footer button{
+    background-color:rgb(58, 12, 56);
+    border-radius:8px;
+    padding:8px 15px;
+    color:rgb(252, 165, 165);
+    border:0;
+    outline: none;
+    font-size:20px;
+    font-weight:500;
+
+}
+
+.resultBox{
+    margin-bottom: 30px;
+    display: grid;
+    grid-template-columns:1fr 1fr;
+    grid-row-gap: 15px;
+    font-size:20px;
+
+}
+.resultBox *:nth-child(odd){
+    text-align: right;
+}
+.resultBox span{
+    font-weight: 600;;
+}
+.buttonbox{
+    border-top: 2px solid #444;
+    
+    text-align: center;
+
+}
+.buttonbox a{
+    background-color:orange;
+    border:0;
+    border-radius:50px;
+    text-decoration: none;
+    outline: none;
+    color:black;
+    padding:7px 15px;
+    margin-top: 30px;
+    display: inline-block;
+}
+
+@media screen and (max-width:860px) {
+    .leftside{
+        display:none;
+
+    }
+    .container,
+    .box{
+        width: 425px;
+
+    }
+    .rightside{
+        width: 100%;
+    }
+    .optionbox{
+        grid-template-columns: 1fr;
+    }
+}
